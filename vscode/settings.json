@@ -1,0 +1,10 @@
+{
+  "editor.fontSize": 14,
+  "editor.renderWhitespace": "all",
+  "editor.useTabStops": false,
+  "editor.tabSize": 2,
+  "files.encoding": "utf8",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.enableSmartCommit": true
+}

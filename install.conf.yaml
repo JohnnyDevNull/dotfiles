@@ -1,3 +1,22 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: []
-- link: {}
-- shell: []
+
+- link:
+    ~/.dotfiles: ''
+    ~/.bashrc:
+        force: true
+        path: bashrc
+    ~/.bash_aliases: bash_aliases
+    ~/.git-prompt.sh:
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.gitignore_global: gitignore_global
+    ~/.config/Code/User/settings.json: 'vscode/settings.json'
+
+- shell:
+    - [ 'git submodule update --init --recursive', 'Installing submodules...']
+    - [ 'mkdir -p $HOME/Projects/{test,github,gitlab,bitbucket}', 'Setting up Projects directories... ']
