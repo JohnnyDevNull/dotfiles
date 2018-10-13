@@ -1,32 +1,31 @@
 [alias]
-    # one-line log
-    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    # list branches sorted by last modified
-    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
-    # list aliases
-    la = "!git config -l | grep alias | cut -c 7-"
+	# one-line log
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	# list branches sorted by last modified
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	# list aliases
+	la = "!git config -l | grep alias | cut -c 7-"
 
 [web]
-    browser = google-chrome
+	browser = google-chrome
 
 [color]
-    ui = auto
+	ui = auto
 
 [color "branch"]
-    current = yellow bold
-    local = green bold
-    remote = cyan bold
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
 
 [core]
-    editor = vim
-    autocrlf = input
-    excludesfile = ~/.gitignore_global
+	editor = vim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
 
 [user]
-    username = JohnnyDevNull
-    name = Philipp John
-    email = philipp.john@live.com
+	email = philipp.john@live.de
+	name = JohnnyDevNull
 
 # ghq settings - https://github.com/motemen/ghq
 [ghq]
-    root = ~/Projects
+	root = ~/Projects
