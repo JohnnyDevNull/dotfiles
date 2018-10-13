@@ -19,4 +19,4 @@
 
 - shell:
     - [ 'git submodule update --init --recursive', 'Installing submodules...']
-    - [ 'mkdir -p $HOME/Projects/{test,github,gitlab,bitbucket}', 'Setting up Projects directories... ']
+    - [ 'mkdir -p $HOME/Projects/{test,github,gitlab,bitbucket,local}', 'Setting up Projects directories... ']
