@@ -1,7 +1,7 @@
-Dotfiles Template
+Dotfiles
 =================
 
-This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
+My personal dotfiles.
 
 To get started, you can [create a new repository from this template][template]
 (or you can [fork][fork] this repository, if you prefer). You can probably
