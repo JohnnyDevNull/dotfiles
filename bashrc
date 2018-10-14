@@ -90,6 +90,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+    . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
 if [ -n "$DISPLAY" ]; then
   xset b off
 fi
