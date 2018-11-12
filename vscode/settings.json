@@ -4,11 +4,14 @@
   "editor.useTabStops": false,
   "editor.tabSize": 2,
   "files.encoding": "utf8",
+  "javascript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
   "workbench.iconTheme": "material-icon-theme",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "explorer.confirmDelete": false,
   "autoimport.doubleQuotes": false,
   "window.zoomLevel": 0,
+  "breadcrumbs.enabled": true
 }
