@@ -13,5 +13,13 @@
   "explorer.confirmDelete": false,
   "autoimport.doubleQuotes": false,
   "window.zoomLevel": 0,
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  }
 }
