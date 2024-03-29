@@ -1,0 +1,22 @@
+alias h='history'
+
+# Functions which works as alias:
+# tar-gz Functions
+targz() { tar -zcvf "${1}_$(date '+%Y-%m-%d').tar.gz" "$1"; }
+untargz() { tar -zxvf $1; }
+listtar() { tar -tf $1; }
+
+alias git-branch="git --no-pager branch"
+
+# Git log with tree
+alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Updates the current branch and cleanups the heads
+gupd() {
+  git fetch --all --prune
+  git pull --rebase --autostash
+  git gc --prune
+}
+
+# Delete all merged branches
+alias git-cb="git branch -D `git branch --merged | grep -v \* | xargs`"
